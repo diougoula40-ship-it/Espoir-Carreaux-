@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TonNom Carrelage | Expert en Pose de Revêtements</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* --- STYLE GÉNÉRAL --- */
+        :root {
+            --primary: #2c3e50; /* Bleu sombre pro */
+            --accent: #e67e22;  /* Orange terre cuite / carrelage */
+            --light: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 90%;
+            z-index: 1000;
+        }
+
+        /* --- HERO SECTION (ACCUEIL) --- */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+
+        /* --- GALERIE / RÉALISATIONS --- */
+        .portfolio { padding: 80px 5%; background: var(--light); }
+        .portfolio h2 { text-align: center; margin-bottom: 40px; color: var(--primary); }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover { transform: translateY(-5px); }
+        .project-card img { width: 100%; height: 250px; object-fit: cover; }
+        .project-card div { padding: 15px; }
+
+        /* --- BOUTON WHATSAPP FLOTTANT --- */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            text-decoration: none;
+            z-index: 1000;
+        }
+
+        .cta-button {
+            background: var(--accent);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        footer { text-align: center; padding: 40px; background: var(--primary); color: white; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><strong>VOTRE NOM</strong> CONSTRUCTION</div>
+        <nav>
+            <a href="#projets" style="color:white; text-decoration:none;">Mes Réalisations</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>L'Art du Carrelage de Haute Qualité</h1>
+        <p>Pose professionnelle, finitions impeccables et respect des délais.</p>
+        <a href="https://wa.me/221XXXXXXXXX" class="cta-button">Demander un devis gratuit</a>
+    </section>
+
+    <section id="projets" class="portfolio">
+        <h2>Mes Réalisations</h2>
+        <div class="grid">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1527359443443-84a48acc7ff0?auto=format&fit=crop&w=500&q=60" alt="Salle de bain">
+                <div>
+                    <h3>Salle de Bain Moderne</h3>
+                    <p>Pose de grès cérame grand format avec découpes de précision.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=500&q=60" alt="Cuisine">
+                <div>
+                    <h3>Crédence de Cuisine</h3>
+                    <p>Style métro biseauté pour un look chic et épuré.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=500&q=60" alt="Terrasse">
+                <div>
+                    <h3>Terrasse Extérieure</h3>
+                    <p>Carrelage antidérapant haute résistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Votre Nom Construction - Tous droits réservés</p>
+    </footer>
+
+    <a href="https://wa.me/221XXXXXXXXX" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
